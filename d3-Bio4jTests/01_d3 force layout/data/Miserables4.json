@@ -1,0 +1,40 @@
+{
+  "nodes":[
+    {"id":0,"name":"Taxon","source":2,"properties":"Name"},
+    {"id":1,"name":"SubcellularLocation","source":1,"properties":"Name"},
+    {"id":2,"name":"SequenceCaution","source":1,"properties":"Name"},
+    {"id":3,"name":"Protein","source":1,"properties":["Name","FullName","ShortName","Accession","Sequence","ModifiedDate","Mass","Length","GeneNames","AlternativeAcessions"]},
+    {"id":4,"name":"Pfam","source":1,"properties":["Name","Id"]},
+    {"id":5,"name":"Person","source":1,"properties":"Name"},
+    {"id":6,"name":"Organism","source":1,"properties":["ScientificName","CommonName","SynonoymName","NcbiTaxonomyId"]},
+    {"id":7,"name":"Keyword","source":1,"properties":["Id","Name"]},
+    {"id":8,"name":"Isoform","source":1,"properties":["Id","Note","Name","Sequence"]},
+    {"id":9,"name":"Interpro","source":1,"properties":["Id","Name"]},
+    {"id":10,"name":"Institute","source":2,"properties":"Name"},
+    {"id":11,"name":"GoTerm","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":12,"name":"FeatureType","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":13,"name":"Enzyme","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":14,"name":"Dataset","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":15,"name":"Country","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":16,"name":"Consortium","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":17,"name":"CommentType","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":18,"name":"City","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]},
+    {"id":19,"name":"AlternativeProduct","source":2,"properties":["Id","Name","Definition","Namespace","Obsolete","Comment","AlternativeIds"]}
+  ],
+  "links":[
+    //{"source":3,"target":3,"properties":"Uniref50Representant","type":"boolean"},
+    //{"source":3,"target":3,"properties":"Uniref90Representant","type":"boolean"},
+    //{"source":3,"target":3,"properties":"Uniref100Representant","type":"boolean"},
+    {"source":1,"target":2,"properties":"Uniref50ClusterThisProteinBelongsTo","type":"list"},
+    {"source":3,"target":2,"properties":"Uniref90ClusterThisProteinBelongsTo","type":"list"},
+    {"source":3,"target":4,"properties":"Uniref100ClusterThisProteinBelongsTo","type":"list"},
+    {"source":3,"target":6,"properties":"tOrganism","type":"single"},
+    {"source":3,"target":6,"properties":"tOrganism","type":"single"},
+    {"source":3,"target":6,"properties":"tOrganism","type":"single"},
+    {"source":3,"target":6,"properties":"tOrganism","type":"single"},
+    {"source":3,"target":6,"properties":"tOrganism","type":"single"},
+    {"source":3,"target":6,"properties":"tOrganism","type":"single"},
+
+    {"source":3,"target":3,"value":1}
+  ]
+}
