@@ -7,7 +7,10 @@ Development of an interactive web-based tool that will allow users to intuitivel
 **Phase0. From 2nd week March – 2nd week May**
 
 - D3 self-learning period through on-line resources.
+- Familiarization with Github platform and MarkDown tool.
+- Collaboration on defining the GraphSON representation of the data model.
 - For 21 April: Test representation of a small part of the domain model as first contact with the Bio4j platform and the GraphSON data on d3. Basic network representation with SVG objects using the force-directed [Force layout](https://github.com/mbostock/d3/wiki/Force-Layout) implementation as simple first exploration.
+
 
 ------
 
