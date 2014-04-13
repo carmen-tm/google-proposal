@@ -5,9 +5,12 @@
     <script src="http://d3js.org/d3.v2.js"></script>
  
     <style type="text/css">
+/*
 svg {
   border: 1px solid #ccc;
 }
+*/
+
 body {
   font: 10px sans-serif;
 }
@@ -38,7 +41,7 @@ line.link {
 var width = 960,     // svg width
     height = 600,     // svg height
     dr = 4,      // default point radius
-    off = 15,    // cluster hull offset
+    off = 20,    // cluster hull offset
     expand = {}, // expanded clusters
     data, net, force, hullg, hull, linkg, link, nodeg, node;
  
